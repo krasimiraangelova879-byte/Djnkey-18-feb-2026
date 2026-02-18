@@ -143,12 +143,12 @@ export const translations = {
       bio2: "With over 10 years of experience behind the decks, hundreds of performances, thousands of smiles and a million fulfilled wishes, I create emotions that are remembered - through precise music selection, sense of the audience and stylish, dynamic mixing.",
       bio3: "I have experience in clubs and bars, as well as rich experience in musical arrangement and hosting of private events - corporate parties, birthdays, anniversaries, proms, weddings and more.",
       bio4: "For me, every event has its own energy. My role is to feel it, build on it and create an atmosphere that unites people on the dance floor.",
-      card1Title: "Since 2013",
-      card1Desc: "Over 10 years of professional experience with hundreds of performances.",
-      card2Title: "Clubs & Bars",
-      card2Desc: "Experience in top venues in Sofia and across the country with diverse musical styles.",
+      card1Title: "Experience",
+      card1Desc: "Over 10 years of experience behind the decks and hundreds of performances.",
+      card2Title: "DJ Sets",
+      card2Desc: "DJ sets at various locations and work with artists.",
       card3Title: "Private Events",
-      card3Desc: "Weddings, corporate parties, anniversaries, proms and christenings."
+      card3Desc: "Corporate parties, proms, anniversaries and weddings."
     },
     // Music Style
     musicStyle: {
