@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <LanguageProvider>
-          <CustomCursor />
           <Header />
           <LanguageSwitcher />
           <main>
