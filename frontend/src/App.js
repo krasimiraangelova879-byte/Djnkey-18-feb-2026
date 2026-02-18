@@ -9,7 +9,7 @@ import ProfessionalExperience from "./components/ProfessionalExperience";
 import WhyChoose from "./components/WhyChoose";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import CustomCursor from "./components/CustomCursor";
+// CustomCursor removed - using default cursor
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { Toaster } from "./components/ui/sonner";
 
