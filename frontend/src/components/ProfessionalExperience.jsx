@@ -93,24 +93,24 @@ const ProfessionalExperience = () => {
           
           <div className="relative z-10 py-8 px-4">
             <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
-              Умения и Сертификати
+              {t.experience.skillsTitle}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg text-center hover:bg-black/60 transition-colors duration-200 border border-white/10">
                 <div className="text-3xl mb-2">🎧</div>
-                <div className="text-white font-medium">Професионално DJ Оборудване</div>
+                <div className="text-white font-medium">{t.experience.skill1}</div>
+              </div>
+              <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg text-center hover:bg-black/60 transition-colors duration-200 border border-white/10">
+                <div className="text-3xl mb-2">💡</div>
+                <div className="text-white font-medium">{t.experience.skill2}</div>
               </div>
               <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg text-center hover:bg-black/60 transition-colors duration-200 border border-white/10">
                 <div className="text-3xl mb-2">🎵</div>
-                <div className="text-white font-medium">Музикално Производство</div>
+                <div className="text-white font-medium">{t.experience.skill3}</div>
               </div>
               <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg text-center hover:bg-black/60 transition-colors duration-200 border border-white/10">
-                <div className="text-3xl mb-2">🎚️</div>
-                <div className="text-white font-medium">Звукова Техника</div>
-              </div>
-              <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg text-center hover:bg-black/60 transition-colors duration-200 border border-white/10">
-                <div className="text-3xl mb-2">⚡</div>
-                <div className="text-white font-medium">Светлинни Ефекти</div>
+                <div className="text-3xl mb-2">🎤</div>
+                <div className="text-white font-medium">{t.experience.skill4}</div>
               </div>
             </div>
           </div>
