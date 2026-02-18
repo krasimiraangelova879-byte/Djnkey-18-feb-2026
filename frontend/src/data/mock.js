@@ -58,146 +58,74 @@ export const musicStyles = [
 export const experiences = [
   {
     id: 1,
-    title: "365 Beach Bar / 365 La Opera",
-    venue: "София и морско побрежие",
+    title: "Aura / Bamboo / Bamboo Beach",
+    venue: "София и Созопол",
     year: "",
-    description: "Регулярни изпълнения в популярна верига заведения",
+    description: "DJ сетове в заведенията от веригата",
     type: "venue"
   },
   {
     id: 2,
-    title: "Bamboo Beach / Bamboo Urban",
-    venue: "Плаж и градска локация",
+    title: "Corner Piano bar",
+    venue: "София",
     year: "",
-    description: "DJ сетове в двете локации на веригата",
+    description: "Разнообразна програма с изпълнители на живо",
     type: "venue"
   },
   {
     id: 3,
-    title: "Bar Dak / Bar Dak -2",
+    title: "Gramophone club",
     venue: "София",
     year: "",
-    description: "Музикално оформление на събития",
+    description: "Корпоративни партита до зори",
     type: "venue"
   },
   {
     id: 4,
-    title: "Corner – Piano Bar & live",
-    venue: "София",
+    title: "Largo di Serdika",
+    venue: "София Център",
     year: "",
-    description: "Live изпълнения и DJ сетове",
+    description: "House сетове & латино програми",
     type: "venue"
   },
   {
     id: 5,
-    title: "Cocos Bar & Dinner",
-    venue: "София",
+    title: "Machete beach bar",
+    venue: "Каваци Созопол",
     year: "",
-    description: "Елегантна музика за вечери",
+    description: "Beach Bar Session",
     type: "venue"
   },
   {
     id: 6,
-    title: "Ginger Sushi Layout",
+    title: "Pulse Fitness",
     venue: "София",
     year: "",
-    description: "Стилна атмосфера в суши ресторант",
+    description: "Мотивиращ микс за тежки тренировки",
     type: "venue"
   },
   {
     id: 7,
-    title: "Gramophone club & private",
+    title: "Morgan´s bar",
     venue: "София",
     year: "",
-    description: "Клубни партита и частни събития",
+    description: "Топ хитове за танци",
     type: "venue"
   },
   {
     id: 8,
-    title: "Gravity Bar Sofia",
+    title: "Gravity bar",
     venue: "София",
     year: "",
-    description: "Модерен бар с качествена музика",
+    description: "Ретро парти",
     type: "venue"
   },
   {
     id: 9,
-    title: "Largo di Serdika",
-    venue: "София - център",
+    title: "Relax bar & dinner",
+    venue: "София жк.Надежда",
     year: "",
-    description: "Централна локация в сърцето на столицата",
-    type: "venue"
-  },
-  {
-    id: 10,
-    title: "Lege Bar & Dinner",
-    venue: "София",
-    year: "",
-    description: "Fine dining с DJ съпровод",
-    type: "venue"
-  },
-  {
-    id: 11,
-    title: "Lounge bar Mondo",
-    venue: "София",
-    year: "",
-    description: "Lounge атмосфера и chillout музика",
-    type: "venue"
-  },
-  {
-    id: 12,
-    title: "Machete Beach Bar",
-    venue: "Морско побрежие",
-    year: "",
-    description: "Летни beach party сетове",
-    type: "venue"
-  },
-  {
-    id: 13,
-    title: "Morgan's Bar & live",
-    venue: "София",
-    year: "",
-    description: "Live music venue с DJ сетове",
-    type: "venue"
-  },
-  {
-    id: 14,
-    title: "Playground The Mall",
-    venue: "София - The Mall",
-    year: "",
-    description: "События в mall environment",
-    type: "venue"
-  },
-  {
-    id: 15,
-    title: "Pulse Fitness&Spa",
-    venue: "София",
-    year: "",
-    description: "Специални fitness и wellness събития",
-    type: "venue"
-  },
-  {
-    id: 16,
-    title: "Relax Bar & Dinner",
-    venue: "София",
-    year: "",
-    description: "Relaxed dining атмосфера",
-    type: "venue"
-  },
-  {
-    id: 17,
-    title: "Sound Cafe Sozopol",
-    venue: "Созопол",
-    year: "",
-    description: "Морски град с уникална атмосфера",
-    type: "venue"
-  },
-  {
-    id: 18,
-    title: "Oazis Beach Bar Greece",
-    venue: "Гърция",
-    year: "",
-    description: "Международни изпълнения в Гърция",
+    description: "Гръцко парти",
     type: "venue"
   }
 ];
