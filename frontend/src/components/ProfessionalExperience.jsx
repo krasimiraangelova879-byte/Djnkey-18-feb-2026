@@ -1,8 +1,10 @@
 import React from 'react';
 import { experiences } from '../data/mock';
 import { Calendar, MapPin, Trophy } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const ProfessionalExperience = () => {
+  const { t } = useLanguage();
   return (
     <section id="experience" className="section-padding bg-dark-section">
       <div className="container mx-auto px-4 lg:px-8">
