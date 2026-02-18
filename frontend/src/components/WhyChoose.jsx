@@ -19,9 +19,6 @@ const WhyChoose = () => {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h2 className="section-heading text-white">Защо да изберете DJ NKEY</h2>
-          <p className="body-large text-white/70">
-            Вашето събитие заслужава най-доброто - професионализъм, качество и страст към музиката
-          </p>
         </div>
 
         {/* Reasons Grid */}
