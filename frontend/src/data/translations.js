@@ -178,11 +178,11 @@ export const translations = {
       events: "Events",
       clubs: "Clubs",
       clients: "Happy Clients",
-      skillsTitle: "Skills & Certifications",
-      skill1: "Professional DJ Equipment",
-      skill2: "Music Production",
-      skill3: "Sound Engineering",
-      skill4: "Light Effects"
+      skillsTitle: "Technical Equipment & Skills",
+      skill1: "DJ Equipment",
+      skill2: "Light & Smoke Effects",
+      skill3: "Thematic & Harmonic Mix",
+      skill4: "Event Hosting with Microphone"
     },
     // Why Choose
     whyChoose: {
