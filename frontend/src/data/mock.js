@@ -11,7 +11,7 @@ export const djInfo = {
 
 Вярвам, че всяко събитие има своя собствена енергия. Моята роля е да я усетя, да я надградя и да създам атмосфера, която обединява хората на дансинга.`,
   heroImage: "https://customer-assets.emergentagent.com/job_rhythm-palace-2/artifacts/z1ns63pd_IMG_1929.jpg",
-  email: "Nkeynanchev@gmail.com",
+  email: "nkeynanchev@gmail.com",
   phone: "+359 888776055",
   viber: "+359888776055"
 };
