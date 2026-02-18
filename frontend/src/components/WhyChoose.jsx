@@ -86,6 +86,11 @@ const WhyChoose = () => {
               С него се работи лесно. Препоръчвам ви го!
             </p>
           </div>
+          
+          {/* Google Reviews Source */}
+          <div className="mt-4 text-center">
+            <span className="text-white/40 text-sm">google.reviews</span>
+          </div>
         </div>
 
         {/* CTA Section */}
