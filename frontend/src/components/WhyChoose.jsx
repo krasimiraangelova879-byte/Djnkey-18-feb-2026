@@ -44,21 +44,47 @@ const WhyChoose = () => {
           ))}
         </div>
 
-        {/* Testimonial Section */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary-accent/10 to-primary-accent/5 rounded-lg p-8 md:p-12 border border-primary-accent/20">
-          <div className="text-center space-y-6">
-            <div className="flex justify-center gap-2 mb-4">
+        {/* Testimonial Section - Google Review Style */}
+        <div className="max-w-3xl mx-auto bg-[#1a1a1c] rounded-xl p-6 md:p-8">
+          {/* Header with Profile */}
+          <div className="flex items-start justify-between mb-4">
+            <div className="flex items-center gap-3">
+              {/* Profile Avatar */}
+              <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">I</span>
+                <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center">
+                  <Star size={12} className="text-white fill-white" />
+                </div>
+              </div>
+              {/* Name and Credentials */}
+              <div>
+                <h4 className="text-white font-semibold text-lg">Ivayla Tasseva</h4>
+                <p className="text-white/50 text-sm">Местен гид • 44 отзива • 25 снимки</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Stars and Date */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={32} className="text-primary-accent fill-primary-accent" />
+                <Star key={i} size={18} className="text-orange-500 fill-orange-500" />
               ))}
             </div>
-            <blockquote className="text-xl md:text-2xl text-white italic leading-relaxed">
-              "DJ NKEY направи нашата сватба незабравима! Професионализмът и музикалната селекция бяха на най-високо ниво. Всички гости танцуваха цяла нощ!"
-            </blockquote>
-            <div className="pt-4">
-              <div className="text-lg font-semibold text-primary-accent">Мария и Иван</div>
-              <div className="text-white/60">Сватба, София</div>
-            </div>
+            <span className="text-white/50 text-sm">26.11.2023 г.</span>
+          </div>
+
+          {/* Review Text Box */}
+          <div className="border-2 border-blue-500/60 rounded-lg p-5 bg-[#0d0d0e]">
+            <p className="text-white/90 leading-relaxed text-base">
+              Николай беше диждей на партито за моя рожден ден. Със сигурност мога да кажа, че благодарение на него, купона беше на "макс" и настроението - страхотно!
+            </p>
+            <p className="text-white/90 leading-relaxed text-base mt-3">
+              Не го познавах предварително, но всички притеснения изчезнаха още при първия ни разговор. Ники старателно проучва музикалните предпочитания на клиента, прави допълнителни предложения и може да реагира бързо на момента.
+            </p>
+            <p className="text-white/90 leading-relaxed text-base mt-3">
+              С него се работи лесно. Препоръчвам ви го!
+            </p>
           </div>
         </div>
 
