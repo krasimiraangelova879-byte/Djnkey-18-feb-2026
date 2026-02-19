@@ -17,22 +17,27 @@ const GalleryModal = ({ isOpen, onClose }) => {
         className="relative w-full max-w-7xl my-8"
         onClick={(e) => e.stopPropagation()}
       >
+
         {/* Close Button */}
         <button
           onClick={onClose}
           className="fixed top-6 right-6 z-[110] w-12 h-12 bg-white/10 hover:bg-primary-accent rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 backdrop-blur-md"
-          aria-label="Close gallery"
+          aria-label={t('gallery.close')}
         >
           <X size={28} className="text-white" />
         </button>
 
-        {/* Gallery Header */}
+        {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('gallery.title')}</h2>
-          <p className="text-white/70 text-lg">{t('gallery.subtitle')}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            {t('gallery.title')}
+          </h2>
+          <p className="text-white/70 text-lg">
+            {t('gallery.subtitle')}
+          </p>
         </div>
 
-        {/* Gallery Grid */}
+        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 px-4 auto-rows-auto">
           {gallery.map((item) => (
             <div 
@@ -49,7 +54,7 @@ const GalleryModal = ({ isOpen, onClose }) => {
           ))}
         </div>
 
-        {/* Close button at bottom */}
+        {/* Bottom Close */}
         <div className="text-center mt-12">
           <button
             onClick={onClose}
@@ -58,6 +63,7 @@ const GalleryModal = ({ isOpen, onClose }) => {
             {t('gallery.close')}
           </button>
         </div>
+
       </div>
     </div>
   );
