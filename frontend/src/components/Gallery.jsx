@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
 import { gallery } from '../data/mock';
 import { X } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const { t } = useLanguage();
 
   return (
     <section id="gallery" className="section-padding bg-dark-section">
       <div className="container mx-auto px-4 lg:px-8">
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="section-heading text-white">Галерия</h2>
+          <h2 className="section-heading text-white">
+            {t('gallery.title')}
+          </h2>
           <p className="body-large text-white/70">
-            Моменти от моите изпълнения и събития
+            {t('gallery.subtitle')}
           </p>
         </div>
 
@@ -29,14 +34,17 @@ const Gallery = () => {
                 alt={item.alt}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
+
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-semibold">Виж Повече</span>
+                <span className="text-white text-lg font-semibold">
+                  {t('gallery.close')}
+                </span>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Lightbox Modal */}
+        {/* Lightbox */}
         {selectedImage && (
           <div 
             className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
@@ -48,6 +56,7 @@ const Gallery = () => {
             >
               <X size={36} />
             </button>
+
             <img 
               src={selectedImage.image}
               alt={selectedImage.alt}
@@ -55,6 +64,7 @@ const Gallery = () => {
             />
           </div>
         )}
+
       </div>
     </section>
   );
