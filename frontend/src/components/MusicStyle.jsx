@@ -15,7 +15,8 @@ const MusicStyle = () => {
 
   return (
     <section id="music-style" className="section-padding bg-light-section relative overflow-hidden">
-      {/* Background Image with Overlay */}
+      
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
           src="https://customer-assets.emergentagent.com/job_rhythm-palace-2/artifacts/d7zr4jqk_IMG_1952.jpg"
@@ -26,6 +27,7 @@ const MusicStyle = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h2 className="section-heading text-white">
@@ -40,10 +42,11 @@ const MusicStyle = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {musicStyles.map((style) => {
             const IconComponent = iconMap[style.icon];
+
             return (
               <div 
                 key={style.id}
-                className="service-card bg-card-bg p-8 rounded-lg hover:transform hover:-translate-y-2 transition-all duration-300 group"
+                className="service-card bg-card-bg p-8 rounded-lg hover:-translate-y-2 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 mb-6 rounded-full bg-primary-accent/20 flex items-center justify-center group-hover:bg-primary-accent/30 transition-colors duration-300">
                   {IconComponent && (
@@ -53,9 +56,11 @@ const MusicStyle = () => {
                     />
                   )}
                 </div>
+
                 <h3 className="card-heading text-white mb-3 group-hover:text-primary-accent transition-colors duration-200">
                   {language === 'bg' ? style.title : style.titleEn}
                 </h3>
+
                 <p className="body-medium text-white/70">
                   {language === 'bg' ? style.description : style.descriptionEn}
                 </p>
@@ -70,12 +75,15 @@ const MusicStyle = () => {
             <div className="w-20 h-20 mx-auto rounded-full bg-primary-accent/20 flex items-center justify-center">
               <Disc3 size={40} className="text-primary-accent animate-spin-slow" />
             </div>
+
             <h3 className="text-2xl md:text-3xl font-bold text-white">
-              {t('musicStyle.featureTitle')}
+              {t('musicStyle.discoverMusic')}
             </h3>
+
             <p className="body-large text-white/70">
-              {t('musicStyle.featureDesc')}
+              {t('musicStyle.discoverDesc')}
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <a 
                 href="https://soundcloud.com/djnkey" 
@@ -88,11 +96,13 @@ const MusicStyle = () => {
                   alt="SoundCloud"
                   className="w-5 h-5 object-contain"
                 />
-                {t('musicStyle.listenButton')}
+                {t('musicStyle.listenSoundcloud')}
               </a>
             </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );
