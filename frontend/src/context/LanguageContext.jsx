@@ -13,19 +13,23 @@ export const useLanguage = () => {
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
-    // Get language from localStorage or default to Bulgarian
     return localStorage.getItem('djnkey-language') || 'bg';
   });
 
   const t = (key) => {
     const keys = key.split('.');
     let value = translations[language];
-    
+
     for (const k of keys) {
       value = value?.[k];
     }
-    
-    return value || key;
+
+    // If value is undefined, null, or empty string → return empty string
+    if (value === undefined || value === null || value === '') {
+      return '';
+    }
+
+    return value;
   };
 
   const changeLanguage = (lang) => {
