@@ -26,11 +26,6 @@ const WhyChoose = () => {
           <h2 className="section-heading text-white">
             {t('whyChoose.title')}
           </h2>
-          {t('whyChoose.subtitle') && (
-            <p className="text-white/70">
-              {t('whyChoose.subtitle')}
-            </p>
-          )}
         </div>
 
         {/* Reasons Grid */}
@@ -118,7 +113,7 @@ const WhyChoose = () => {
           </div>
 
           <div className="mt-4 text-center">
-            <span className="text-white/40 text-sm">google.reviews</span>
+            <span className="text-white/40 text-sm">Google reviews</span>
           </div>
         </div>
 
