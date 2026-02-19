@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import Header from "./components/Header";
@@ -19,18 +19,38 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <LanguageProvider>
+
           <Header />
           <LanguageSwitcher />
-          <main>
-            <Hero />
-            <About />
-            <MusicStyle />
-            <ProfessionalExperience />
-            <WhyChoose />
-            <Contact />
-          </main>
+
+          <Routes>
+
+            {/* HOMEPAGE */}
+            <Route
+              path="/"
+              element={
+                <main>
+                  <Hero />
+                  <About />
+                  <MusicStyle />
+                  <ProfessionalExperience />
+                  <WhyChoose />
+                  <Contact />
+                </main>
+              }
+            />
+
+            {/* GALLERY PAGE */}
+            <Route
+              path="/gallery"
+              element={<Gallery />}
+            />
+
+          </Routes>
+
           <Footer />
           <Toaster />
+
         </LanguageProvider>
       </BrowserRouter>
     </div>
