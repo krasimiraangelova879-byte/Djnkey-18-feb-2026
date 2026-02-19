@@ -18,10 +18,10 @@ export const translations = {
 
     about: {
       title: "Кой е DJ NKEY?",
-      bio1: "Здравейте! Аз съм Николай Нанчев – диджей и водещ на събития. През 2013 г. започна моя път като DJ. Минах през много трудности и ограничения, но продължих по професионалния път на диджея, воден от желанието да правя хората щастливи с хубава музика.",
-      bio2: "С повече от 10 години опит зад пулта, стотици участия, хиляди усмивки и милион сбъднати желания, създавам емоция, която се помни – чрез прецизен музикален подбор, усет към публиката и стилен, динамичен микс.",
-      bio3: "Зад гърба си имам участия както в клубове и барове, така и имам богат опит в музикалното оформление и воденето на частни събития – корпоративни партита, рождени дни, юбилеи, абитуриентски балове, сватби и други.",
-      bio4: "За мен всяко събитие има собствена енергия. Моята роля е да я усетя, да я надградя и да създам атмосфера, която обединява хората на дансинга.",
+      bio1: "Здравейте! Аз съм Николай Нанчев – диджей и водещ на събития...",
+      bio2: "С повече от 10 години опит зад пулта...",
+      bio3: "Зад гърба си имам участия...",
+      bio4: "За мен всяко събитие има собствена енергия.",
       card1Title: "Опит",
       card1Desc: "Над 10 години опит зад пулта и стотици участия",
       card2Title: "DJ Сетове",
@@ -33,18 +33,6 @@ export const translations = {
     musicStyle: {
       title: "Стил музика",
       subtitle: "Разнообразие от музикални стилове за всеки вкус и събитие",
-      style1: "Club Music",
-      style1Desc: "Afro/Funky/Tech-House + Freestyle",
-      style2: "Commercial Music",
-      style2Desc: "Dance pop за незабравими частни партита",
-      style3: "Retro Hits",
-      style3Desc: "80's, 90's, 2000's - класиките които всички обичат",
-      style4: "Bulgarian Music",
-      style4Desc: "Pop, Pop-Folk - българските хитове",
-      style5: "Balkan Music",
-      style5Desc: "Greek, Serbian и много други балкански звучания",
-      style6: "...и много други",
-      style6Desc: "Разнообразен репертоар за всеки вкус и събитие",
       discoverMusic: "Открийте Моята Музика",
       discoverDesc: "Слушайте моите миксове и почувствайте енергията на музиката",
       listenSoundcloud: "Слушай в SoundCloud"
@@ -67,19 +55,13 @@ export const translations = {
     whyChoose: {
       title: "Защо да изберете DJ NKEY",
       subtitle: "",
-      reason1: "Над десет години професионален опит",
-      reason1Desc: "Богат опит в индустрията и стотици участия",
-      reason2: "Изпълнения в най-добрите заведения",
-      reason2Desc: "Клубове, барове, ресторанти и зали за събития",
-      reason3: "Опит в озвучаването",
-      reason3Desc: "Колаборации и съвместни участия с популярни изпълнители",
       testimonialQuote: `Николай беше диджей на партито за моя рожден ден. Със сигурност мога да кажа, че благодарение на него, купонът беше на "макс" и настроението – страхотно!
 Не го познавах предварително, но всички притеснения изчезнаха още при първия ни разговор. Ники старателно проучва музикалните предпочитания на клиента, прави допълнителни предложения и може да реагира бързо на момента.
 С него се работи лесно.
 
-Препоръчвам ви го!`,      testimonialAuthor: "Ivayla Tasseva",
+Препоръчвам ви го!`,
+      testimonialAuthor: "Ivayla Tasseva",
       testimonialDate: "26.11.2023 г.",
-      testimonialEvent: "Рожден ден",
       ctaTitle: "Готови ли сте за незабравимо събитие?",
       ctaSubtitle: "Свържете се с мен днес и нека направим вашето събитие специално",
       ctaButton: "Резервирай Сега"
@@ -118,7 +100,6 @@ export const translations = {
       copyright: "Всички права запазени."
     },
 
-    // 🔥 NEW SECTION
     musicPlayer: {
       play: "Пусни музика",
       pause: "Спри музика",
@@ -147,33 +128,21 @@ export const translations = {
 
     about: {
       title: "Who is DJ NKEY?",
-      bio1: "Hello! I'm Nikolay Nanchev - DJ and event host...",
-      bio2: "With over 10 years of experience...",
-      bio3: "I have experience in clubs and bars...",
-      bio4: "For me, every event has its own energy.",
+      bio1: "Hello! I'm Nikolay Nanchev – DJ and event host...",
+      bio2: "With over 10 years of experience behind the decks...",
+      bio3: "I have performed in clubs, bars and private events...",
+      bio4: "Every event has its own energy.",
       card1Title: "Experience",
-      card1Desc: "Over 10 years of experience behind the decks.",
+      card1Desc: "Over 10 years of professional experience.",
       card2Title: "DJ Sets",
-      card2Desc: "DJ sets at various locations.",
+      card2Desc: "Professional DJ sets at various locations.",
       card3Title: "Private Events",
-      card3Desc: "Corporate parties, proms, weddings."
+      card3Desc: "Corporate parties, proms, weddings and more."
     },
 
     musicStyle: {
       title: "Music Style",
       subtitle: "Variety of musical styles for every taste and event",
-      style1: "Club Music",
-      style1Desc: "Afro / Funky / Tech-House + Freestyle",
-      style2: "Commercial",
-      style2Desc: "Timeless pop hits",
-      style3: "Retro Hits",
-      style3Desc: "80's, 90's, 2000's classics",
-      style4: "Balkan Party",
-      style4Desc: "Greek, Serbian and Balkan rhythms",
-      style5: "Bulgarian Music",
-      style5Desc: "BG Pop & Pop-Folk",
-      style6: "...and many more",
-      style6Desc: "Diverse repertoire for every taste",
       discoverMusic: "Discover My Music",
       discoverDesc: "Listen to my mixes and feel the energy",
       listenSoundcloud: "Listen on SoundCloud"
@@ -193,30 +162,20 @@ export const translations = {
       skill4: "Event Hosting with Microphone"
     },
 
- whyChoose: {
-  title: "Why Choose DJ NKEY",
-  subtitle: "Your event deserves the best",
-
-  reason1: "Over 10 years of professional experience",
-  reason1Desc: "Rich experience in the DJ industry and hundreds of successful performances",
-  reason2: "Performances in top venues",
-  reason2Desc: "Clubs, bars, restaurants and event halls",
-  reason3: "Sound & collaboration experience",
-  reason3Desc: "Collaborations and joint performances with popular artists",
-
-  testimonialQuote: `Nikolay was the DJ at my birthday party. I can definitely say that thanks to him, the party was at its "max" and the mood was great!
+    whyChoose: {
+      title: "Why Choose DJ NKEY",
+      subtitle: "Your event deserves the best",
+      testimonialQuote: `Nikolay was the DJ at my birthday party. I can definitely say that thanks to him, the party was at its "max" and the mood was great!
 I didn't know him beforehand, but all my worries disappeared during our first conversation. Niki carefully studies the client's musical preferences, makes additional suggestions and can react quickly to the moment.
 He is easy to work with.
 
 I recommend him to you!`,
-
-  testimonialAuthor: "Ivayla Tasseva",
-  testimonialDate: "26.11.2023",
-
-  ctaTitle: "Ready for an unforgettable event?",
-  ctaSubtitle: "Contact me today and let's make your event special",
-  ctaButton: "Book Now"
-},
+      testimonialAuthor: "Ivayla Tasseva",
+      testimonialDate: "26.11.2023",
+      ctaTitle: "Ready for an unforgettable event?",
+      ctaSubtitle: "Contact me today and let's make your event special",
+      ctaButton: "Book Now"
+    },
 
     gallery: {
       title: "Gallery",
@@ -251,7 +210,6 @@ I recommend him to you!`,
       copyright: "All rights reserved."
     },
 
-    // 🔥 NEW SECTION
     musicPlayer: {
       play: "Play music",
       pause: "Pause music",
