@@ -35,27 +35,39 @@ const WhyChoose = () => {
 
         {/* Reasons Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
-          {whyChooseReasons.map((reason, index) => (
-            <div 
-              key={reason.id}
-              className="bg-card-bg p-8 rounded-lg hover:-translate-y-2 transition-all duration-300 group"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 flex-shrink-0 rounded-full bg-primary-accent/20 flex items-center justify-center group-hover:bg-primary-accent/30 transition-colors duration-300">
-                  <Check size={24} className="text-primary-accent" />
+          {whyChooseReasons.map((reason, index) => {
+            const title =
+              language === 'bg'
+                ? reason.title
+                : reason.titleEn || reason.title;
+
+            const description =
+              language === 'bg'
+                ? reason.description
+                : reason.descriptionEn || reason.description;
+
+            return (
+              <div 
+                key={reason.id}
+                className="bg-card-bg p-8 rounded-lg hover:-translate-y-2 transition-all duration-300 group"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 flex-shrink-0 rounded-full bg-primary-accent/20 flex items-center justify-center group-hover:bg-primary-accent/30 transition-colors duration-300">
+                    <Check size={24} className="text-primary-accent" />
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-white group-hover:text-primary-accent transition-colors duration-200 pt-2">
+                    {title}
+                  </h3>
                 </div>
 
-                <h3 className="text-xl font-semibold text-white group-hover:text-primary-accent transition-colors duration-200 pt-2">
-                  {language === 'bg' ? reason.title : reason.titleEn}
-                </h3>
+                <p className="text-white/70 pl-16">
+                  {description}
+                </p>
               </div>
-
-              <p className="text-white/70 pl-16">
-                {language === 'bg' ? reason.description : reason.descriptionEn}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Testimonial Section */}
@@ -66,7 +78,7 @@ const WhyChoose = () => {
 
               <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
                 <span className="text-white text-xl font-bold">
-                  {t('whyChoose.testimonialAuthor').charAt(0)}
+                  {t('whyChoose.testimonialAuthor')?.charAt(0)}
                 </span>
                 <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center">
                   <Star size={12} className="text-white fill-white" />
@@ -100,7 +112,7 @@ const WhyChoose = () => {
           </div>
 
           <div className="border-2 border-blue-500/60 rounded-lg p-5 bg-[#0d0d0e]">
-            <p className="text-white/90 leading-relaxed text-base">
+            <p className="text-white/90 leading-relaxed text-base whitespace-pre-line">
               {t('whyChoose.testimonialQuote')}
             </p>
           </div>
@@ -120,7 +132,9 @@ const WhyChoose = () => {
           </p>
 
           <button 
-            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+            onClick={() =>
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+            }
             className="cta-button large bg-primary-accent text-black hover:bg-primary-accent-hover hover:scale-105"
           >
             {t('whyChoose.ctaButton')}
