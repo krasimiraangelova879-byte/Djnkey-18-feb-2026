@@ -1,70 +1,46 @@
-import React, { useState } from 'react';
-import { gallery } from '../data/mock';
-import { X } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import React from "react";
+
+// Import images
+import img1 from "../assets/gallery/IMG_2242.jpeg";
+import img2 from "../assets/gallery/IMG_2243.jpeg";
+import img3 from "../assets/gallery/IMG_2244.jpeg";
+import img4 from "../assets/gallery/IMG_2245.jpeg";
+import img5 from "../assets/gallery/IMG_2246.jpeg";
+import img6 from "../assets/gallery/IMG_2247.jpeg";
+import img7 from "../assets/gallery/IMG_2248.jpeg";
+import img8 from "../assets/gallery/IMG_2249.jpeg";
+import img9 from "../assets/gallery/IMG_2250.jpeg";
+import img10 from "../assets/gallery/IMG_2251.jpeg";
+import img11 from "../assets/gallery/IMG_2252.jpeg";
+
+const images = [
+  img1, img2, img3, img4, img5,
+  img6, img7, img8, img9, img10, img11
+];
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const { t } = useLanguage();
-
   return (
     <section id="gallery" className="section-padding bg-dark-section">
       <div className="container mx-auto px-4 lg:px-8">
+        
+        <h2 className="section-heading text-white text-center mb-12">
+          Gallery
+        </h2>
 
-        {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="section-heading text-white">
-            {t('gallery.title')}
-          </h2>
-          <p className="body-large text-white/70">
-            {t('gallery.subtitle')}
-          </p>
-        </div>
-
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {gallery.map((item) => (
-            <div 
-              key={item.id}
-              className="gallery-item relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
-              onClick={() => setSelectedImage(item)}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-lg group cursor-pointer"
             >
-              <img 
-                src={item.image}
-                alt={item.alt}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              <img
+                src={image}
+                alt={`DJ NKEY ${index + 1}`}
+                className="w-full h-[350px] object-cover group-hover:scale-110 transition-transform duration-500"
               />
-
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-semibold">
-                  {t('gallery.close')}
-                </span>
-              </div>
             </div>
           ))}
         </div>
-
-        {/* Lightbox */}
-        {selectedImage && (
-          <div 
-            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
-          >
-            <button
-              className="absolute top-6 right-6 text-white hover:text-primary-accent transition-colors duration-200"
-              onClick={() => setSelectedImage(null)}
-            >
-              <X size={36} />
-            </button>
-
-            <img 
-              src={selectedImage.image}
-              alt={selectedImage.alt}
-              className="max-w-full max-h-[90vh] object-contain"
-            />
-          </div>
-        )}
-
       </div>
     </section>
   );
