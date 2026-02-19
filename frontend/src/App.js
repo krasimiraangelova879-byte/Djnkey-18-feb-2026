@@ -7,6 +7,7 @@ import About from "./components/About";
 import MusicStyle from "./components/MusicStyle";
 import ProfessionalExperience from "./components/ProfessionalExperience";
 import WhyChoose from "./components/WhyChoose";
+import Gallery from "./components/Gallery";   // ✅ ADDED
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LanguageSwitcher from "./components/LanguageSwitcher";
@@ -25,6 +26,7 @@ function App() {
             <MusicStyle />
             <ProfessionalExperience />
             <WhyChoose />
+            <Gallery />   {/* ✅ ADDED HERE */}
             <Contact />
           </main>
           <Footer />
