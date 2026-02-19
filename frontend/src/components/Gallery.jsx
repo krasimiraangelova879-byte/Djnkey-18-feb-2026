@@ -20,27 +20,25 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="section-padding bg-dark-section">
-      <div className="container mx-auto px-4 lg:px-8">
-        
-        <h2 className="section-heading text-white text-center mb-12">
+    <section id="gallery" className="py-20 bg-black">
+      <div className="container mx-auto px-4">
+
+        <h2 className="text-4xl font-bold text-white text-center mb-12">
           Gallery
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {images.map((image, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-lg group cursor-pointer"
-            >
+            <div key={index} className="overflow-hidden rounded-lg">
               <img
                 src={image}
                 alt={`DJ NKEY ${index + 1}`}
-                className="w-full h-[350px] object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-80 object-cover"
               />
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
