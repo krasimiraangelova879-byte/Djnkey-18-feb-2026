@@ -1,6 +1,5 @@
 export const translations = {
   bg: {
-    // Header
     nav: {
       about: "Информация за мен",
       musicStyle: "Стил музика",
@@ -9,14 +8,14 @@ export const translations = {
       gallery: "Галерия",
       contact: "Контакт"
     },
-    // Hero
+
     hero: {
       welcome: "Welcome to the official website of",
       tagline: "Професионален DJ за вашето незабравимо събитие",
       bookNow: "Резервирай Сега",
       upcomingEvents: "Предстоящи Събития"
     },
-    // About
+
     about: {
       title: "Кой е DJ NKEY?",
       bio1: "Здравейте! Аз съм Николай Нанчев – диджей и водещ на събития. През 2013 г. започна моя път като DJ. Минах през много трудности и ограничения, но продължих по професионалния път на диджея, воден от желанието да правя хората щастливи с хубава музика.",
@@ -30,7 +29,7 @@ export const translations = {
       card3Title: "Частни събития",
       card3Desc: "Корпоративни партита, абитуриентски балове, юбилеи и сватби"
     },
-    // Music Style
+
     musicStyle: {
       title: "Стил музика",
       subtitle: "Разнообразие от музикални стилове за всеки вкус и събитие",
@@ -50,7 +49,7 @@ export const translations = {
       discoverDesc: "Слушайте моите миксове и почувствайте енергията на музиката",
       listenSoundcloud: "Слушай в SoundCloud"
     },
-    // Experience
+
     experience: {
       title: "Професионален опит",
       subtitle: "Изпълнения в топ заведения в София, България и чужбина",
@@ -64,7 +63,7 @@ export const translations = {
       skill3: "Тематичен и хармоничен микс",
       skill4: "Водене на събития с микрофон"
     },
-    // Why Choose
+
     whyChoose: {
       title: "Защо да изберете DJ NKEY",
       subtitle: "",
@@ -74,26 +73,21 @@ export const translations = {
       reason2Desc: "Клубове, барове, ресторанти и зали за събития",
       reason3: "Опит в озвучаването",
       reason3Desc: "Колаборации и съвместни участия с популярни изпълнители",
-      reason4: "",
-      reason4Desc: "",
-      reason5: "",
-      reason5Desc: "",
-      testimonialQuote: "Николай беше диждей на партито за моя рожден ден. Със сигурност мога да кажа, че благодарение на него, купона беше на \"макс\" и настроението - страхотно! Не го познавах предварително, но всички притеснения изчезнаха още при първия ни разговор. Ники старателно проучва музикалните предпочитания на клиента, прави допълнителни предложения и може да реагира бързо на момента. С него се работи лесно. Препоръчвам ви го!",
+      testimonialQuote: "Николай беше диждей на партито за моя рожден ден...",
       testimonialAuthor: "Ivayla Tasseva",
-      testimonialCredentials: "Местен гид • 44 отзива • 25 снимки",
       testimonialDate: "26.11.2023 г.",
       testimonialEvent: "Рожден ден",
       ctaTitle: "Готови ли сте за незабравимо събитие?",
       ctaSubtitle: "Свържете се с мен днес и нека направим вашето събитие специално",
       ctaButton: "Резервирай Сега"
     },
-    // Gallery
+
     gallery: {
       title: "Галерия",
       subtitle: "Моменти от моите изпълнения",
       close: "Затвори"
     },
-    // Contact
+
     contact: {
       title: "Свържете Се",
       subtitle: "Имате въпроси или искате да резервирате? Свържете се с мен!",
@@ -113,16 +107,25 @@ export const translations = {
       successTitle: "Успешно изпратено!",
       successMessage: "Вашето запитване беше получено. Ще се свържем с вас скоро."
     },
-    // Footer
+
     footer: {
-      description: "Професионален DJ за всяко ваше събитие. Създавам незабравима атмосфера с качествена музика.",
+      description: "Професионален DJ за всяко ваше събитие.",
       quickLinks: "Бързи Връзки",
       followMe: "Последвайте Ме",
       copyright: "Всички права запазени."
+    },
+
+    // 🔥 NEW SECTION
+    musicPlayer: {
+      play: "Пусни музика",
+      pause: "Спри музика",
+      mute: "Заглуши",
+      unmute: "Включи звук",
+      hide: "Скрий"
     }
   },
+
   en: {
-    // Header
     nav: {
       about: "About Me",
       musicStyle: "Music Style",
@@ -131,28 +134,28 @@ export const translations = {
       gallery: "Gallery",
       contact: "Contact"
     },
-    // Hero
+
     hero: {
       welcome: "Welcome to the official website of",
       tagline: "Professional DJ for your unforgettable event",
       bookNow: "Book Now",
       upcomingEvents: "Upcoming Events"
     },
-    // About
+
     about: {
       title: "Who is DJ NKEY?",
-      bio1: "Hello! I'm Nikolay Nanchev - DJ and event host. My journey as a DJ began in 2013. I went through many difficulties and limitations, but continued on the professional path of a DJ, driven by the desire to make people happy with good music.",
-      bio2: "With over 10 years of experience behind the decks, hundreds of performances, thousands of smiles and a million fulfilled wishes, I create emotions that are remembered - through precise music selection, sense of the audience and stylish, dynamic mixing.",
-      bio3: "I have experience in clubs and bars, as well as rich experience in musical arrangement and hosting of private events - corporate parties, birthdays, anniversaries, proms, weddings and more.",
-      bio4: "For me, every event has its own energy. My role is to feel it, build on it and create an atmosphere that unites people on the dance floor.",
+      bio1: "Hello! I'm Nikolay Nanchev - DJ and event host...",
+      bio2: "With over 10 years of experience...",
+      bio3: "I have experience in clubs and bars...",
+      bio4: "For me, every event has its own energy.",
       card1Title: "Experience",
-      card1Desc: "Over 10 years of experience behind the decks and hundreds of performances.",
+      card1Desc: "Over 10 years of experience behind the decks.",
       card2Title: "DJ Sets",
-      card2Desc: "DJ sets at various locations and work with artists.",
+      card2Desc: "DJ sets at various locations.",
       card3Title: "Private Events",
-      card3Desc: "Corporate parties, proms, anniversaries and weddings."
+      card3Desc: "Corporate parties, proms, weddings."
     },
-    // Music Style
+
     musicStyle: {
       title: "Music Style",
       subtitle: "Variety of musical styles for every taste and event",
@@ -161,21 +164,21 @@ export const translations = {
       style2: "Commercial",
       style2Desc: "Timeless pop hits",
       style3: "Retro Hits",
-      style3Desc: "80's, 90's, 2000's - the classics everyone loves",
-      style4: "Balkan party",
+      style3Desc: "80's, 90's, 2000's classics",
+      style4: "Balkan Party",
       style4Desc: "Greek, Serbian and Balkan rhythms",
       style5: "Bulgarian Music",
       style5Desc: "BG Pop & Pop-Folk",
       style6: "...and many more",
-      style6Desc: "Diverse repertoire for every taste and event",
+      style6Desc: "Diverse repertoire for every taste",
       discoverMusic: "Discover My Music",
-      discoverDesc: "Listen to my mixes and feel the energy of the music",
+      discoverDesc: "Listen to my mixes and feel the energy",
       listenSoundcloud: "Listen on SoundCloud"
     },
-    // Experience
+
     experience: {
       title: "Professional Experience",
-      subtitle: "Performances in top venues in Sofia, Bulgaria and abroad",
+      subtitle: "Performances in top venues",
       years: "Years Experience",
       events: "Events",
       clubs: "Clubs",
@@ -186,37 +189,29 @@ export const translations = {
       skill3: "Thematic & Harmonic Mix",
       skill4: "Event Hosting with Microphone"
     },
-    // Why Choose
+
     whyChoose: {
       title: "Why Choose DJ NKEY",
-      subtitle: "Your event deserves the best - professionalism, quality and passion for music",
-      reason1: "Over 10 years of professional experience",
-      reason1Desc: "Rich experience in the DJ industry with thousands of successful performances",
-      reason2: "Performances in the best venues in Sofia and the country",
-      reason2Desc: "I've worked in top clubs and prestigious venues across Bulgaria",
-      reason3: "Experience working with some of Bulgaria's most popular artists",
-      reason3Desc: "Collaborations and joint performances with famous artists",
-      reason4: "Ability to sense the audience and build atmosphere step by step",
-      reason4Desc: "Reading the energy of the room and creating the perfect atmosphere",
-      reason5: "Perfect combination of classic and modern sound",
-      reason5Desc: "Mixing timeless hits with the latest musical trends",
-      testimonialQuote: "DJ NKEY made our wedding unforgettable! The professionalism and music selection were top-notch. All guests danced all night!",
+      subtitle: "Your event deserves the best",
+      reason1: "Over 10 years of experience",
+      reason1Desc: "Rich experience in the DJ industry",
+      testimonialQuote: "DJ NKEY made our wedding unforgettable!",
       testimonialAuthor: "Maria & Ivan",
       testimonialEvent: "Wedding, Sofia",
       ctaTitle: "Ready for an unforgettable event?",
-      ctaSubtitle: "Contact me today and let's make your event special",
+      ctaSubtitle: "Contact me today",
       ctaButton: "Book Now"
     },
-    // Gallery
+
     gallery: {
       title: "Gallery",
       subtitle: "Moments from my performances",
       close: "Close"
     },
-    // Contact
+
     contact: {
       title: "Get In Touch",
-      subtitle: "Have questions or want to book? Contact me!",
+      subtitle: "Have questions or want to book?",
       email: "Email",
       phone: "Phone",
       viber: "Viber",
@@ -231,14 +226,23 @@ export const translations = {
       messagePlaceholder: "Tell me about your event...",
       submit: "Send Inquiry",
       successTitle: "Successfully sent!",
-      successMessage: "Your inquiry has been received. We will contact you soon."
+      successMessage: "Your inquiry has been received."
     },
-    // Footer
+
     footer: {
-      description: "Professional DJ for every event. I create an unforgettable atmosphere with quality music.",
+      description: "Professional DJ for every event.",
       quickLinks: "Quick Links",
       followMe: "Follow Me",
       copyright: "All rights reserved."
+    },
+
+    // 🔥 NEW SECTION
+    musicPlayer: {
+      play: "Play music",
+      pause: "Pause music",
+      mute: "Mute",
+      unmute: "Unmute",
+      hide: "Hide"
     }
   }
 };
