@@ -7,18 +7,32 @@ const About = () => {
   const { t, language } = useLanguage();
   
   const getBioText = () => {
+    // SAFE VERSION (prevents crash if djInfo.bio is undefined)
     if (language === 'bg') {
-      return djInfo.bio.split('\n\n');
+      if (djInfo && djInfo.bio && typeof djInfo.bio === 'string') {
+        return djInfo.bio.split('\n\n');
+      }
+      return [];
     }
-    return [t('about.bio1'), t('about.bio2'), t('about.bio3'), t('about.bio4')];
+
+    return [
+      t('about.bio1'),
+      t('about.bio2'),
+      t('about.bio3'),
+      t('about.bio4')
+    ];
   };
 
   return (
     <section id="about" className="section-padding bg-dark-section">
       <div className="container mx-auto px-4 lg:px-8">
+        
         {/* Section Header */}
         <div className="max-w-5xl mx-auto text-center mb-16 space-y-6">
-          <h2 className="section-heading text-white">{t('about.title')}</h2>
+          <h2 className="section-heading text-white">
+            {t('about.title')}
+          </h2>
+
           <div className="text-left space-y-5 text-white/80 leading-relaxed text-lg">
             {getBioText().map((paragraph, index) => (
               <p key={index} className="body-large">
@@ -30,7 +44,8 @@ const About = () => {
 
         {/* Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="service-card bg-card-bg p-8 rounded-lg hover:transform hover:-translate-y-2 transition-all duration-300 text-center">
+          
+          <div className="service-card bg-card-bg p-8 rounded-lg hover:-translate-y-2 transition-all duration-300 text-center">
             <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary-accent/20 flex items-center justify-center">
               <User size={32} className="text-primary-accent" />
             </div>
@@ -42,7 +57,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="service-card bg-card-bg p-8 rounded-lg hover:transform hover:-translate-y-2 transition-all duration-300 text-center">
+          <div className="service-card bg-card-bg p-8 rounded-lg hover:-translate-y-2 transition-all duration-300 text-center">
             <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary-accent/20 flex items-center justify-center">
               <Music2 size={32} className="text-primary-accent" />
             </div>
@@ -54,7 +69,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="service-card bg-card-bg p-8 rounded-lg hover:transform hover:-translate-y-2 transition-all duration-300 text-center">
+          <div className="service-card bg-card-bg p-8 rounded-lg hover:-translate-y-2 transition-all duration-300 text-center">
             <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary-accent/20 flex items-center justify-center">
               <Briefcase size={32} className="text-primary-accent" />
             </div>
@@ -65,6 +80,7 @@ const About = () => {
               {t('about.card3Desc')}
             </p>
           </div>
+
         </div>
       </div>
     </section>
