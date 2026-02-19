@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { djInfo } from '../data/mock';
 import { Mail, Phone, Send, MessageCircle } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,16 +24,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Mock form submission
-    console.log('Form submitted:', formData);
-    
+
     toast({
-      title: "Успешно изпратено!",
-      description: "Вашето запитване беше получено. Ще се свържем с вас скоро.",
+      title: t('contact.successTitle'),
+      description: t('contact.successMessage'),
     });
 
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -42,50 +41,65 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-light-section">
       <div className="container mx-auto px-4 lg:px-8">
+
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="section-heading text-white">Свържете Се</h2>
+          <h2 className="section-heading text-white">
+            {t('contact.title')}
+          </h2>
           <p className="body-large text-white/70">
-            Имате въпроси или искате да резервирате? Свържете се с мен!
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h3 className="card-heading text-white mb-6">Информация за Контакт</h3>
-              
-              <div className="flex items-start gap-4 p-6 bg-card-bg rounded-lg hover:bg-card-bg-hover transition-colors duration-200">
+              <h3 className="card-heading text-white mb-6">
+                {t('contact.title')}
+              </h3>
+
+              {/* Email */}
+              <div className="flex items-start gap-4 p-6 bg-card-bg rounded-lg">
                 <div className="w-12 h-12 rounded-full bg-primary-accent/20 flex items-center justify-center flex-shrink-0">
                   <Mail className="text-primary-accent" size={24} />
                 </div>
                 <div>
-                  <div className="text-white/60 text-sm uppercase tracking-wide mb-1">Имейл</div>
+                  <div className="text-white/60 text-sm uppercase tracking-wide mb-1">
+                    {t('contact.email')}
+                  </div>
                   <a href={`mailto:${djInfo.email}`} className="text-white hover:text-primary-accent transition-colors duration-200 text-lg">
                     {djInfo.email}
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-6 bg-card-bg rounded-lg hover:bg-card-bg-hover transition-colors duration-200">
+              {/* Phone */}
+              <div className="flex items-start gap-4 p-6 bg-card-bg rounded-lg">
                 <div className="w-12 h-12 rounded-full bg-primary-accent/20 flex items-center justify-center flex-shrink-0">
                   <Phone className="text-primary-accent" size={24} />
                 </div>
                 <div>
-                  <div className="text-white/60 text-sm uppercase tracking-wide mb-1">Телефон</div>
+                  <div className="text-white/60 text-sm uppercase tracking-wide mb-1">
+                    {t('contact.phone')}
+                  </div>
                   <a href={`tel:${djInfo.phone}`} className="text-white hover:text-primary-accent transition-colors duration-200 text-lg">
                     {djInfo.phone}
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-6 bg-card-bg rounded-lg hover:bg-card-bg-hover transition-colors duration-200">
+              {/* Viber */}
+              <div className="flex items-start gap-4 p-6 bg-card-bg rounded-lg">
                 <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center flex-shrink-0">
                   <MessageCircle className="text-purple-500" size={24} />
                 </div>
                 <div>
-                  <div className="text-white/60 text-sm uppercase tracking-wide mb-1">Viber</div>
+                  <div className="text-white/60 text-sm uppercase tracking-wide mb-1">
+                    {t('contact.viber')}
+                  </div>
                   <a 
                     href={`viber://chat?number=%2B${djInfo.viber.replace(/[\s+]/g, '')}`}
                     className="text-white hover:text-purple-500 transition-colors duration-200 text-lg"
@@ -99,69 +113,73 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-card-bg p-8 rounded-lg">
-            <h3 className="card-heading text-white mb-6">Изпратете Запитване</h3>
+            <h3 className="card-heading text-white mb-6">
+              {t('contact.formTitle')}
+            </h3>
+
             <form onSubmit={handleSubmit} className="space-y-6">
+
+              {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-white/80 mb-2 text-sm font-medium">
-                  Име *
+                <label className="block text-white/80 mb-2 text-sm font-medium">
+                  {t('contact.name')} *
                 </label>
                 <input
                   type="text"
-                  id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-primary-accent transition-colors duration-200"
-                  placeholder="Вашето име"
+                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white"
+                  placeholder={t('contact.namePlaceholder')}
                 />
               </div>
 
+              {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-white/80 mb-2 text-sm font-medium">
-                  Имейл *
+                <label className="block text-white/80 mb-2 text-sm font-medium">
+                  {t('contact.emailLabel')} *
                 </label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-primary-accent transition-colors duration-200"
-                  placeholder="your@email.com"
+                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white"
+                  placeholder={t('contact.emailPlaceholder')}
                 />
               </div>
 
+              {/* Phone */}
               <div>
-                <label htmlFor="phone" className="block text-white/80 mb-2 text-sm font-medium">
-                  Телефон
+                <label className="block text-white/80 mb-2 text-sm font-medium">
+                  {t('contact.phoneLabel')}
                 </label>
                 <input
                   type="tel"
-                  id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-primary-accent transition-colors duration-200"
-                  placeholder="+359 888 123 456"
+                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white"
+                  placeholder={t('contact.phonePlaceholder')}
                 />
               </div>
 
+              {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-white/80 mb-2 text-sm font-medium">
-                  Съобщение *
+                <label className="block text-white/80 mb-2 text-sm font-medium">
+                  {t('contact.message')} *
                 </label>
                 <textarea
-                  id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-primary-accent transition-colors duration-200 resize-none"
-                  placeholder="Разкажете ми за вашето събитие..."
-                ></textarea>
+                  className="w-full px-4 py-3 bg-black/30 border border-white/10 rounded-lg text-white resize-none"
+                  placeholder={t('contact.messagePlaceholder')}
+                />
               </div>
 
               <button
@@ -169,8 +187,9 @@ const Contact = () => {
                 className="cta-button w-full bg-primary-accent text-black hover:bg-primary-accent-hover flex items-center justify-center gap-2"
               >
                 <Send size={18} />
-                Изпрати Запитване
+                {t('contact.submit')}
               </button>
+
             </form>
           </div>
         </div>
