@@ -65,35 +65,45 @@ const ProfessionalExperience = () => {
         {/* Experience List */}
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {experiences.map((exp, index) => (
-              <div 
-                key={exp.id}
-                className="bg-card-bg rounded-lg p-6 hover:bg-card-bg-hover transition-all duration-300 group"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-10 h-10 rounded-full bg-primary-accent/20 flex items-center justify-center group-hover:bg-primary-accent/30 transition-colors duration-300">
-                      <MapPin size={20} className="text-primary-accent" />
+            {experiences.map((exp, index) => {
+              const title = language === 'bg' ? exp.title : exp.titleEn;
+              const venue = language === 'bg' ? exp.venue : exp.venueEn;
+              const description = language === 'bg' ? exp.description : exp.descriptionEn;
+
+              return (
+                <div 
+                  key={exp.id}
+                  className="bg-card-bg rounded-lg p-6 hover:bg-card-bg-hover transition-all duration-300 group"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-10 h-10 rounded-full bg-primary-accent/20 flex items-center justify-center group-hover:bg-primary-accent/30 transition-colors duration-300">
+                        <MapPin size={20} className="text-primary-accent" />
+                      </div>
+                    </div>
+
+                    <div className="flex-1">
+                      <h3 className="text-lg font-semibold text-white group-hover:text-primary-accent transition-colors duration-200 mb-2">
+                        {title}
+                      </h3>
+
+                      {venue && (
+                        <p className="text-white/70 text-sm mb-1">
+                          {venue}
+                        </p>
+                      )}
+
+                      {description && (
+                        <p className="text-white/50 text-sm">
+                          {description}
+                        </p>
+                      )}
                     </div>
                   </div>
-
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-white group-hover:text-primary-accent transition-colors duration-200 mb-2">
-                      {language === 'bg' ? exp.title : exp.titleEn}
-                    </h3>
-                    <p className="text-white/70 text-sm mb-1">
-                      {language === 'bg' ? exp.venue : exp.venueEn}
-                    </p>
-                    {exp.description && (
-                      <p className="text-white/50 text-sm">
-                        {language === 'bg' ? exp.description : exp.descriptionEn}
-                      </p>
-                    )}
-                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
