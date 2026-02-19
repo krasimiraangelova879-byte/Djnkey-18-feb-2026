@@ -43,6 +43,17 @@ const MusicStyle = () => {
           {musicStyles.map((style) => {
             const IconComponent = iconMap[style.icon];
 
+            // 🔥 SAFE FALLBACK SYSTEM
+            const title =
+              language === 'en'
+                ? style.titleEn || style.title
+                : style.title;
+
+            const description =
+              language === 'en'
+                ? style.descriptionEn || style.description
+                : style.description;
+
             return (
               <div 
                 key={style.id}
@@ -58,11 +69,11 @@ const MusicStyle = () => {
                 </div>
 
                 <h3 className="card-heading text-white mb-3 group-hover:text-primary-accent transition-colors duration-200">
-                  {language === 'bg' ? style.title : style.titleEn}
+                  {title}
                 </h3>
 
                 <p className="body-medium text-white/70">
-                  {language === 'bg' ? style.description : style.descriptionEn}
+                  {description}
                 </p>
               </div>
             );
