@@ -1,4 +1,4 @@
-import "@/App.css";
+import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./components/Header";
@@ -9,7 +9,6 @@ import ProfessionalExperience from "./components/ProfessionalExperience";
 import WhyChoose from "./components/WhyChoose";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// CustomCursor removed - using default cursor
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { Toaster } from "./components/ui/sonner";
 
