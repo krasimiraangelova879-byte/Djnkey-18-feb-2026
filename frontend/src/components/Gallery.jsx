@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 // Import images
 import img1 from "../assets/gallery/IMG_2242.jpeg";
@@ -19,11 +20,13 @@ const images = [
 ];
 
 const Gallery = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="gallery" className="section-padding bg-dark-section">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="section-heading text-white text-center mb-12">
-          Gallery
+          {t("nav.gallery")}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
