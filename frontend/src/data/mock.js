@@ -25,8 +25,8 @@ export const musicStyles = [
   },
   {
     id: 2,
-    title: "Commercial",
-    titleEn: "Commercial",
+    title: "Commercial Music",
+    titleEn: "Commercial Music",
     description: "Вечните поп-хитове",
     descriptionEn: "Timeless pop hits",
     icon: "Radio"
@@ -41,7 +41,7 @@ export const musicStyles = [
   },
   {
     id: 4,
-    title: "Balkan party",
+    title: "Balkan Party",
     titleEn: "Balkan Party",
     description: "Гръцки, Сръбски и балкански ритми",
     descriptionEn: "Greek, Serbian and Balkan rhythms",
@@ -81,7 +81,7 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Corner Piano bar",
+    title: "Corner Piano Bar",
     titleEn: "Corner Piano Bar",
     venue: "София",
     venueEn: "Sofia",
@@ -90,7 +90,7 @@ export const experiences = [
   },
   {
     id: 3,
-    title: "Gramophone club",
+    title: "Gramophone Club",
     titleEn: "Gramophone Club",
     venue: "София",
     venueEn: "Sofia",
@@ -108,7 +108,7 @@ export const experiences = [
   },
   {
     id: 5,
-    title: "Machete beach bar",
+    title: "Machete Beach Bar",
     titleEn: "Machete Beach Bar",
     venue: "Каваци Созопол",
     venueEn: "Kavatsi, Sozopol",
@@ -123,6 +123,33 @@ export const experiences = [
     venueEn: "Sofia",
     description: "Мотивиращ микс за тежки тренировки",
     descriptionEn: "Motivating mix for intense workouts"
+  },
+  {
+    id: 7,
+    title: "Morgan’s Bar",
+    titleEn: "Morgan’s Bar",
+    venue: "София",
+    venueEn: "Sofia",
+    description: "Топ хитове за танци",
+    descriptionEn: "Top dance hits"
+  },
+  {
+    id: 8,
+    title: "Gravity Bar",
+    titleEn: "Gravity Bar",
+    venue: "София",
+    venueEn: "Sofia",
+    description: "Ретро парти",
+    descriptionEn: "Retro party"
+  },
+  {
+    id: 9,
+    title: "Relax Bar & Dinner",
+    titleEn: "Relax Bar & Dinner",
+    venue: "София жк. Надежда",
+    venueEn: "Sofia, Nadezhda District",
+    description: "Гръцко парти",
+    descriptionEn: "Greek party"
   }
 ];
 
@@ -150,7 +177,7 @@ export const whyChooseReasons = [
     title: "Опит в озвучаването",
     titleEn: "Sound engineering experience",
     description: "Колаборации и съвместни участия с популярни изпълнители",
-    descriptionEn: "Collaborations with popular artists"
+    descriptionEn: "Collaborations and joint performances with popular artists"
   }
 ];
 
@@ -187,5 +214,7 @@ export const socialLinks = {
   facebook:
     "https://www.facebook.com/share/1AZVHCRczF/?mibextid=wwXIfr",
   instagram: "https://www.instagram.com/dj_nkey/",
-  soundcloud: "https://soundcloud.com/djnkey"
+  soundcloud: "https://soundcloud.com/djnkey",
+  spotify: "https://spotify.com/djnkey",
+  youtube: "https://youtube.com/djnkey"
 };
