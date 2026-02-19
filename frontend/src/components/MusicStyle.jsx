@@ -1,6 +1,7 @@
 import React from 'react';
 import { musicStyles } from '../data/mock';
 import { Music, Radio, Disc3, Headphones } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const iconMap = {
   Music: Music,
@@ -10,6 +11,8 @@ const iconMap = {
 };
 
 const MusicStyle = () => {
+  const { t, language } = useLanguage();
+
   return (
     <section id="music-style" className="section-padding bg-light-section relative overflow-hidden">
       {/* Background Image with Overlay */}
@@ -25,9 +28,11 @@ const MusicStyle = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="section-heading text-white">Стил музика</h2>
+          <h2 className="section-heading text-white">
+            {t('musicStyle.title')}
+          </h2>
           <p className="body-large text-white/70">
-            Разнообразие от музикални стилове за всеки вкус и събитие
+            {t('musicStyle.subtitle')}
           </p>
         </div>
 
@@ -49,10 +54,10 @@ const MusicStyle = () => {
                   )}
                 </div>
                 <h3 className="card-heading text-white mb-3 group-hover:text-primary-accent transition-colors duration-200">
-                  {style.title}
+                  {language === 'bg' ? style.title : style.titleEn}
                 </h3>
                 <p className="body-medium text-white/70">
-                  {style.description}
+                  {language === 'bg' ? style.description : style.descriptionEn}
                 </p>
               </div>
             );
@@ -66,10 +71,10 @@ const MusicStyle = () => {
               <Disc3 size={40} className="text-primary-accent animate-spin-slow" />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-white">
-              Открийте Моята Музика
+              {t('musicStyle.featureTitle')}
             </h3>
             <p className="body-large text-white/70">
-              Слушайте моите миксове и почувствайте енергията на музиката
+              {t('musicStyle.featureDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <a 
@@ -83,7 +88,7 @@ const MusicStyle = () => {
                   alt="SoundCloud"
                   className="w-5 h-5 object-contain"
                 />
-                Слушай в SoundCloud
+                {t('musicStyle.listenButton')}
               </a>
             </div>
           </div>
