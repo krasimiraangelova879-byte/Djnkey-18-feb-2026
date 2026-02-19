@@ -73,8 +73,11 @@ export const translations = {
       reason2Desc: "Клубове, барове, ресторанти и зали за събития",
       reason3: "Опит в озвучаването",
       reason3Desc: "Колаборации и съвместни участия с популярни изпълнители",
-      testimonialQuote: "Николай беше диждей на партито за моя рожден ден...",
-      testimonialAuthor: "Ivayla Tasseva",
+      testimonialQuote: `Николай беше диджей на партито за моя рожден ден. Със сигурност мога да кажа, че благодарение на него, купонът беше на "макс" и настроението – страхотно!
+Не го познавах предварително, но всички притеснения изчезнаха още при първия ни разговор. Ники старателно проучва музикалните предпочитания на клиента, прави допълнителни предложения и може да реагира бързо на момента.
+С него се работи лесно.
+
+Препоръчвам ви го!`,      testimonialAuthor: "Ivayla Tasseva",
       testimonialDate: "26.11.2023 г.",
       testimonialEvent: "Рожден ден",
       ctaTitle: "Готови ли сте за незабравимо събитие?",
@@ -190,18 +193,30 @@ export const translations = {
       skill4: "Event Hosting with Microphone"
     },
 
-    whyChoose: {
-      title: "Why Choose DJ NKEY",
-      subtitle: "Your event deserves the best",
-      reason1: "Over 10 years of experience",
-      reason1Desc: "Rich experience in the DJ industry",
-      testimonialQuote: "DJ NKEY made our wedding unforgettable!",
-      testimonialAuthor: "Maria & Ivan",
-      testimonialEvent: "Wedding, Sofia",
-      ctaTitle: "Ready for an unforgettable event?",
-      ctaSubtitle: "Contact me today",
-      ctaButton: "Book Now"
-    },
+ whyChoose: {
+  title: "Why Choose DJ NKEY",
+  subtitle: "Your event deserves the best",
+
+  reason1: "Over 10 years of professional experience",
+  reason1Desc: "Rich experience in the DJ industry and hundreds of successful performances",
+  reason2: "Performances in top venues",
+  reason2Desc: "Clubs, bars, restaurants and event halls",
+  reason3: "Sound & collaboration experience",
+  reason3Desc: "Collaborations and joint performances with popular artists",
+
+  testimonialQuote: `Nikolay was the DJ at my birthday party. I can definitely say that thanks to him, the party was at its "max" and the mood was great!
+I didn't know him beforehand, but all my worries disappeared during our first conversation. Niki carefully studies the client's musical preferences, makes additional suggestions and can react quickly to the moment.
+He is easy to work with.
+
+I recommend him to you!`,
+
+  testimonialAuthor: "Ivayla Tasseva",
+  testimonialDate: "26.11.2023",
+
+  ctaTitle: "Ready for an unforgettable event?",
+  ctaSubtitle: "Contact me today and let's make your event special",
+  ctaButton: "Book Now"
+},
 
     gallery: {
       title: "Gallery",
