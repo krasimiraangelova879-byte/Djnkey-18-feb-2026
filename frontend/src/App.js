@@ -1,13 +1,14 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import MusicStyle from "./components/MusicStyle";
 import ProfessionalExperience from "./components/ProfessionalExperience";
+import Gallery from "./components/Gallery";
 import WhyChoose from "./components/WhyChoose";
-import Gallery from "./components/Gallery";   // ✅ ADDED
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LanguageSwitcher from "./components/LanguageSwitcher";
@@ -25,8 +26,8 @@ function App() {
             <About />
             <MusicStyle />
             <ProfessionalExperience />
+            <Gallery />
             <WhyChoose />
-            <Gallery />   {/* ✅ ADDED HERE */}
             <Contact />
           </main>
           <Footer />
